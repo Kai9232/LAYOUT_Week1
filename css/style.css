@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -67,8 +67,23 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #FFF;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
 .container {
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skillscontainer {
+  max-width: 996px;
   margin: 0 auto;
 }
 
@@ -76,7 +91,7 @@ body {
   background-color: #415165;
 }
 
-.text-xxl {
+.text-2xl {
   font-size: 80px;
   line-height: 95px;
 }
@@ -99,21 +114,15 @@ body {
   font-weight: 300;
 }
 
-.text-content1 {
-  color: #FFF;
-}
-
-.en-text-title1 {
+.text-primary {
   color: #A00404;
-  font-weight: 700;
 }
 
-.en-text-title2 {
+.text-white {
   color: #FFF;
-  font-weight: 700;
 }
 
-.fontweight-blod {
+.fw-blod {
   font-weight: 700;
 }
 
@@ -294,22 +303,22 @@ body {
   padding-left: 80px;
 }
 
-.lineb1 {
+.line-black-regular {
   border-bottom: 1px solid #000;
   margin-bottom: -1px;
 }
 
-.lineb2 {
+.line-black-blod {
   border-bottom: 2px solid #000;
   margin-bottom: -2px;
 }
 
-.linew {
+.line-white {
   border-bottom: 1px solid #FFF;
   margin-bottom: -1px;
 }
 
-.linelb {
+.line-lightblue {
   border-left: 1px solid #96A9C4;
 }
 
